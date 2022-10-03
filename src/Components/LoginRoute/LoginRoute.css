@@ -1,0 +1,17 @@
+.LoginRoute {
+    background-color: #3892e0;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.LoginRoute>a {
+    cursor: pointer;
+    color: #fff;
+}
+
+.LoginRoute:hover {
+    background-color: #0771ce;
+    ;
+
+}

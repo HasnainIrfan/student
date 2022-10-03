@@ -1,0 +1,239 @@
+.bookcall-wrapper {
+    background-color: #fcfcfc;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px;
+
+}
+
+.bookcall {
+    max-width: 1300px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bookcall-l {
+    width: 50%;
+    padding: 20px;
+    position: relative;
+}
+
+.bookcall-l>h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #1e88e5;
+}
+
+.bookcall-l>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.bookcall-l>ul>div>li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.animate {
+    width: 200px;
+    height: 200px;
+}
+
+.animate>img {
+    width: 100%;
+    height: 100%;
+}
+
+.bookCricle {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #1e88e5;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bookcall-r {
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    border-left: 2px solid #1e88e5;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bookcall-r>h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #1e88e5;
+}
+
+.bookinput {
+    position: relative;
+    width: 500px !important;
+    margin-bottom: 30px;
+}
+
+.bookcalender {
+    padding: 0px 10px;
+    margin-bottom: 30px;
+    width: 500px;
+
+}
+
+
+.inputbox>input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    z-index: 10;
+    color: white;
+    font-weight: 500;
+}
+
+.inputbox>select {
+    position: relative;
+    width: 100%;
+    padding: 10px 10px 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    z-index: 10;
+    color: white;
+    font-weight: 500;
+}
+
+.inputbox>select>option {
+    color: #333;
+}
+
+.BookSpan {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    margin-top: -10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.inputbox>select:valid~span,
+.inputbox>select:focus~span {
+    color: #1e88e5;
+    transform: translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputbox>select:valid~i,
+.inputbox>select:focus~i {
+    height: 44px;
+}
+
+.DatePicker {
+    z-index: 9999;
+}
+
+.react-datepicker-popper {
+    z-index: 9999;
+}
+.react-datepicker-ignore-onclickoutside{
+    width: 100%;
+    height: 44px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #1e88e5;
+    font-size: 18px;
+    padding: 20px 10px 10px;
+    background:none;
+
+}
+.react-datepicker__input-container>input{
+    width: 100%;
+    height: 44px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #1e88e5;
+    font-size: 18px;
+    padding: 20px 10px 10px;
+    background:none;
+
+
+}
+.react-datepicker__month-container{
+    z-index: 1000;
+    width: 500px;
+}
+.DateSelect{
+    z-index: 99;
+}
+.dataEmpty{
+    width: 500px;
+    border-bottom: 2px solid #1e88e5;
+}
+.dataEmpty>span{
+    padding: 20px 10px 10px;
+    margin-top: -10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.bookBtn {
+    border: 2px solid #1e88e5;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.bookBtn::before {
+    background-color: #1e88e5;
+    box-shadow: 5px -8px 0px #1e88e5, 5px 8px 0px #1e88e5;
+}
+
+.bookBtn:hover::before {
+    box-shadow: 5px 0px 0px #1e88e5, 5px 0px 0px #1e88e5;
+}
+
+.bookBtn::after {
+    background-color: #1e88e5;
+    box-shadow: -5px -8px 0px #1e88e5, -5px 8px 0px #1e88e5;
+}
+
+.bookBtn:hover::after {
+    box-shadow: -5px 0px 0px #1e88e5, -5px 0px 0px #1e88e5;
+}

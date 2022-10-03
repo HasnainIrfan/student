@@ -1,0 +1,78 @@
+.main-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/mentor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.skewOne {
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: skewY(-15deg);
+    transition: 0.5s linear;
+    transform-origin: top left;
+}
+
+.skewtwo {
+    position: absolute;
+    bottom: -100%;
+    right: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: skewY(15deg);
+    transition: 0.5s linear;
+    transform-origin: top right;
+}
+
+.skewOneNew {
+    transform: skewY(0deg);
+}
+
+.main {
+    position: relative;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.homeImage1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.main-l {
+    width: 60%;
+    background-color: #fff;
+    height: 300px;
+}
+.main-r{
+    width: 40%;
+    background-color: aqua;
+    height: 300px;
+}
+.img {
+    width: 400px;
+    height: 300px;
+    background-color: red;
+}
+
+.img>img {
+    width: 100%;
+    height: 100%;
+
+}

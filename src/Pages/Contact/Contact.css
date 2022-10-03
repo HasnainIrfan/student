@@ -1,0 +1,307 @@
+.contact-wrapper {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact {
+    max-width: 1300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    margin-bottom: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-l {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box-l {
+    width: 100%;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 15%);
+}
+
+.contact-box-l>h1 {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1e88e5;
+    text-align: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.contact-mibiboxs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact-mibibox {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgb(0 0 0 / 15%);
+    border-radius: 20px;
+}
+
+.contact-cricle {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.contact-cricle>svg {
+    background-color: #1e88e5;
+    border-radius: 50%;
+    padding: 10px;
+    width: 90%;
+    height: 90%;
+    color: #fff;
+}
+
+.contact-mibibox>h1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #26292c;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.contact-mibibox>h6 {
+    font-weight: 400;
+    color: #26292c;
+    font-size: 12px;
+}
+
+.contact-r {
+    position: relative;
+    width: 40%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 20px 10px 20px rgb(0 0 0 / 20%);
+    overflow: hidden;
+}
+
+.contact-r::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(0deg, transparent, #333, #333);
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    animation: boxoutline 6s linear infinite;
+}
+
+.contact-r::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(0deg, transparent, #333, #333);
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    animation: boxoutline 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes boxoutline {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.contact-box-r {
+    position: absolute;
+    box-shadow: 20px 5px 45px rgba(0, 0, 0, 0.15);
+    inset: 3px;
+    border-radius: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #1e88e5;
+    padding: 50px 40px;
+    align-items: center;
+}
+
+.contact-box-r>h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.inputbox {
+    position: relative;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.inputbox>input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    z-index: 10;
+    color: white;
+    font-weight: 500;
+}
+
+.inputbox>span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.inputbox>input:valid~span,
+.inputbox>input:focus~span {
+    color: #1e88e5;
+    transform: translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputbox>i {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #1e88e5;
+    height: 2px;
+    border-radius: 4px;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 5;
+}
+
+.inputbox>input:valid~i,
+.inputbox>input:focus~i {
+    height: 44px;
+
+}
+
+.detailBox {
+    position: relative;
+    width: 300px;
+    margin: 30px 0px;
+
+}
+
+.detailBox>textarea {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    height: 100px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    z-index: 10;
+    resize: none;
+    color: white;
+    font-weight: 500;
+}
+
+.detailBox>span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    transition: 0.3s;
+    transform: translateY(50px);
+}
+
+.detailBox>textarea:valid~span,
+.detailBox>textarea:focus~span {
+    color: #1e88e5;
+    transform: translateY(-34px);
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+
+.detailBox>i {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #1e88e5;
+    height: 2px;
+    border-radius: 4px;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 5;
+}
+
+.detailBox>textarea:valid~i,
+.detailBox>textarea:focus~i {
+    height: 100px;
+
+}
+
+.contactbtn {
+    border: 2px solid #1e88e5;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.contactbtn::before {
+    background-color: #1e88e5;
+    box-shadow: 5px -8px 0px #1e88e5, 5px 8px 0px #1e88e5;
+}
+
+.contactbtn:hover::before {
+    box-shadow: 5px 0px 0px #1e88e5, 5px 0px 0px #1e88e5;
+}
+
+.contactbtn::after {
+    background-color: #1e88e5;
+    box-shadow: -5px -8px 0px #1e88e5, -5px 8px 0px #1e88e5;
+}
+
+.contactbtn:hover::after {
+    box-shadow: -5px 0px 0px #1e88e5, -5px 0px 0px #1e88e5;
+}
